@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-03T15:14:42 IST" name="Default suite" finished-at="2022-10-03T15:18:43 IST" duration-ms="241353">
+    <groups>
+    </groups>
+    <test started-at="2022-10-03T15:14:42 IST" name="Default test" finished-at="2022-10-03T15:18:43 IST" duration-ms="241353">
+      <class name="test.Test_register">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:14:42 IST" name="beforeTest" finished-at="2022-10-03T15:14:57 IST" duration-ms="15045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method signature="Main()[pri:1, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:14:57 IST" name="Main" finished-at="2022-10-03T15:15:04 IST" duration-ms="6530" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Main -->
+        <test-method signature="TestAboutUs0()[pri:2, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:15:04 IST" name="TestAboutUs0" finished-at="2022-10-03T15:15:40 IST" duration-ms="36556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAboutUs0 -->
+        <test-method signature="TestAboutUs1()[pri:3, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:15:40 IST" name="TestAboutUs1" finished-at="2022-10-03T15:16:17 IST" duration-ms="37029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAboutUs1 -->
+        <test-method signature="TestAboutUs2()[pri:4, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:16:17 IST" name="TestAboutUs2" finished-at="2022-10-03T15:16:53 IST" duration-ms="35527" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAboutUs2 -->
+        <test-method signature="TestAboutUs3()[pri:5, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:16:53 IST" name="TestAboutUs3" finished-at="2022-10-03T15:17:28 IST" duration-ms="34926" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAboutUs3 -->
+        <test-method signature="TestAboutUs4()[pri:6, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:17:28 IST" name="TestAboutUs4" finished-at="2022-10-03T15:18:12 IST" duration-ms="44432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAboutUs4 -->
+        <test-method signature="TestAboutUs5()[pri:7, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:18:12 IST" name="TestAboutUs5" finished-at="2022-10-03T15:18:40 IST" duration-ms="28447" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestAboutUs5 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:test.Test_register@6221a451]" started-at="2022-10-03T15:18:40 IST" name="tearDown" finished-at="2022-10-03T15:18:43 IST" duration-ms="2764" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- test.Test_register -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
