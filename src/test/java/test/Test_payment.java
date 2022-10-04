@@ -16,7 +16,8 @@ public class Test_payment {
 	
 	@BeforeTest
 	  public void beforeTest() {
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 		driver.get(url);
 		driver.manage().window().maximize();
@@ -74,6 +75,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Test_payment {
 public String baseUrl = "https://www.jiomart.com/";
     String driverPath = "D:\\D downloads\\chromedriver_win321\\chromedriver.exe";
@@ -81,10 +84,11 @@ public String baseUrl = "https://www.jiomart.com/";
  
   @BeforeTest
   public void beforeTest() {
-	  System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+	  //System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+	  WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
       //driver.manage().timeouts().implicitlyWait(500, TimeUnit.MILLISECONDS);
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
   }
   @Test(priority = 1)
   public void launch() throws InterruptedException{
@@ -100,17 +104,17 @@ Thread.sleep(2000);
   public void signIn() throws InterruptedException{
  driver.findElement(By.xpath("/html/body/div[1]/div[1]/header/div/div[5]/div/a[1]")).click();
  Thread.sleep(2000);
-  driver.findElement(By.id("loginfirst_mobileno")).sendKeys("8975670419");
+ // driver.findElement(By.id("loginfirst_mobileno")).sendKeys("8668335762");
+ driver.findElement(By.id("loginfirst_mobileno")).sendKeys("9359317483");
   driver.findElement(By.cssSelector("button.btn-signpass.arrowbtn")).click();
   Thread.sleep(25000);
   driver.findElement(By.className("btn-login")).click();
  Thread.sleep(2000);
   System.out.println("Login Sucessfully");
- 
-  }
+ }
   @Test(priority = 3)
   public void AddCartClick() throws InterruptedException{
-
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
  driver.findElement(By.id("minicart_btn")).click();
  Thread.sleep(2000);
       System.out.println("Test Case 2:Add To Cart Button Clickable Successfully");
@@ -118,28 +122,12 @@ Thread.sleep(2000);
   }
   @Test(priority = 4)
   public void ProductAddToCart() throws InterruptedException{
-/*
- WebElement mainMenu = driver.findElement( By.id("nav_cat_1687") );
- Actions actions = new Actions(driver);
- actions.moveToElement(mainMenu);
- Thread.sleep(2000);
- WebElement subMenu = driver.findElement(By.id("nav_link_1696"));
- actions.moveToElement(subMenu);
- actions.click().build().perform();
- Thread.sleep(2000);
- JavascriptExecutor s=(JavascriptExecutor)driver;//casting
- s.executeScript("window.scrollBy(0,150)");
-// Thread.sleep(2000);
- driver.findElement(By.className("add_plus")).click();
- Thread.sleep(2000);
- driver.findElement(By.className("add_plus")).click();
-      System.out.println("Test Case 3:Product added to the cart ");
-     */
-	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
  WebElement r =  driver.findElement(By.id("mat-input-0"));
-      r.click();
+ driver.findElement(By.id("mat-input-0")).click();
+      //r.click();
       Thread.sleep(2000);
-      r.sendKeys("Handwash");
+      r.sendKeys("soap");
      Thread.sleep(3000);
       r.sendKeys(Keys.RETURN);
     JavascriptExecutor js=(JavascriptExecutor)driver;//casting
@@ -150,8 +138,9 @@ Thread.sleep(2000);
   @Test(priority = 5)
   public void visibleAddToCartProduct() throws InterruptedException{
 
-	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+
  driver.findElement(By.id("minicart_btn")).click();
+ //driver.findElement(By.className("logo")).click();
     Thread.sleep(4000);
     System.out.println("Test Case 4:Product is visible in Cart ");
      
@@ -174,27 +163,52 @@ Thread.sleep(2000);
  Thread.sleep(2000);
  System.out.println("PlaceOrder button clicked successfully");
  //delivery
- driver.findElement(By.xpath("//*[@id=\"addressmodal\"]/div/div/div[2]/div[2]/div[2]/div/div[2]/div[1]/div/button")).click();
+ driver.findElement(By.className("deliver")).click();
  System.out.println("Deliver here button clicked successfully");
   }
   @Test(priority=8)
-  public void paymentMode() {
+  public void paymentMode() throws InterruptedException {
  driver.findElement(By.cssSelector("button.btn-checkout.btn.btn_to_checkout.m-0")).click();
+ Thread.sleep(2000);
  JavascriptExecutor s1=(JavascriptExecutor)driver;//casting
- s1.executeScript("window.scrollBy(0,700)");
+ s1.executeScript("window.scrollBy(0,400)");
  driver.findElement(By.id("9")).click();
- driver.findElement(By.className("css-128hug4")).click();
+ //s1.executeScript("window.scrollBy(0,-300)");
+ Thread.sleep(2000);
+ WebElement radio1=driver.findElement(By.xpath("//*[@id=\"vertical-tabpanel-9\"]/div/div/div[2]"));
+ radio1.click();
+Thread.sleep(2000);
+ 
  driver.findElement(By.className("css-100scwx")).click();
+ //view and manage
  //driver.findElement(By.cssSelector("button.btn-track.btn.m-0")).click();
- //driver.findElement(By.cssSelector("button.primary-btn")).click();
+ Thread.sleep(3000);
+ //cancel order
+ //view details
+ //driver.findElement(By.className("primary-btn")).click();
+ //cancel
  //driver.findElement(By.cssSelector("button.btn.btn-help.ng-star-inserted")).click();
- //driver.findElement(By.xpath("//*[@id=\"frameModalBottom\"]/div/div/div[2]/div[1]/div[1]/div[2]/label")).click();
- //driver.
- //driver.navigate().back();
- 
- 
+ //select radio button
+ //driver.findElement(By.cssSelector("input.ng-pristine.ng-valid.ng-touched")).click();
+ //submit cancel
+ //driver.findElement(By.className("primary")).click();
+ //logo to go homepage
+driver.findElement(By.cssSelector("a.logo.ng-star-inserted")).click();
+//menu
+driver.findElement(By.className("menu_section")).click();
+//orders
+driver.findElement(By.linkText("Orders")).click();
+Thread.sleep(5000);
+//view detail
+driver.findElement(By.xpath("//*[@id=\"app\"]/main/div/app-orderhistory/div[1]/div/div[2]/div[2]/div/app-order-list/div/section/app-order-card[1]/div[1]/div[3]/div[2]/div/div[1]/button")).click();
+//cancel order
+driver.findElement(By.xpath("//*[@id=\"app\"]/main/div/app-order-detail/div[1]/div[2]/div[1]/div[1]/div[2]/div/div[1]/button")).click();
+//no longer
+WebElement radio2 =driver.findElement(By.name("reasonselect"));
+radio2.click();
+//submit cancel
+driver.findElement(By.className("primary")).click();
 
   }
- 
    
 }

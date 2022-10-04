@@ -39,7 +39,8 @@ public class payment {
 	 driver.findElement(sign_xpath).click();
 	 Thread.sleep(2000);
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-	  driver.findElement(sign_id).sendKeys("8668335762");
+	  //driver.findElement(sign_id).sendKeys("8668335762");
+	  driver.findElement(sign_id).sendKeys("9359317483");
 	  driver.findElement(sign_css).click();
 	  Thread.sleep(25000);
 	  driver.findElement(sign_class).click();

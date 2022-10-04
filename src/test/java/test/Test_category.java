@@ -1,6 +1,9 @@
 package test;
 
 import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.testng.annotations.BeforeTest;
 
 import org.openqa.selenium.WebDriver;
@@ -18,7 +21,8 @@ public class Test_category {
 	
 	@BeforeTest
 	  public void beforeTest() {
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+		WebDriverManager.firefoxdriver().setup();
 		driver = new FirefoxDriver();
 		driver.get(url);
 		driver.manage().window().maximize();

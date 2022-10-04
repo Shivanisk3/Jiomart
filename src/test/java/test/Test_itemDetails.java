@@ -20,6 +20,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 class TestFailedException  extends Exception  
 {  
     public TestFailedException (String str)  
@@ -34,7 +36,8 @@ WebDriver driver=null;
 	@BeforeClass
 	public void driverSetup()
 	{
-		System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "D:\\geckodriver-v0.31.0-win64\\geckodriver.exe");
+		WebDriverManager.firefoxdriver().setup();
 		driver=new FirefoxDriver();
 		
 		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\shivani_kulkarni2\\Downloads\\chromedriver_win32\\chromedriver.exe");

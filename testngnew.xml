@@ -28,7 +28,7 @@
   </test> <!-- Test -->
   <test thread-count="5" name="Test6">
     <classes>
-      <class name="test.Test_itemDetails"/>
+      <class name="test.Test_item_details"/>
     </classes>
   </test> <!-- Test -->
   <test thread-count="5" name="Test7">

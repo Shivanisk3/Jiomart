@@ -3,18 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="test.Test_register">
+      <class name="test.Test_add_to_cart">
         <methods>
-          <include name="tearDown"/>
-          <include name="TestAboutUs0"/>
-          <include name="TestAboutUs5"/>
+          <include name="TotalSavingAmount"/>
+          <include name="TotalProductINCart"/>
+          <include name="TotalAmount"/>
+          <include name="searchproduct"/>
+          <include name="CountProduct"/>
+          <include name="afterTest"/>
+          <include name="visibleAddToCartProduct"/>
           <include name="beforeTest"/>
-          <include name="TestAboutUs1"/>
-          <include name="TestAboutUs3"/>
-          <include name="TestAboutUs2"/>
-          <include name="TestAboutUs4"/>
+          <include name="deleteProduct"/>
         </methods>
-      </class> <!-- test.Test_register -->
+      </class> <!-- test.Test_add_to_cart -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

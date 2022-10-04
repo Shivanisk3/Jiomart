@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test6</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>12/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 30 14:54:59 IST 2022</td>
+<td>Started on:</td><td>Tue Oct 04 16:02:17 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>197 seconds (197613 ms)</td>
+<tr><td>Total time:</td><td>223 seconds (223508 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.Test_itemDetails.dress()'><b>dress</b><br>Test class: test.Test_itemDetails</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;img src=&quot;https://www.jiomart.com/images/product/original/rv04ejjsja/ethnic-basket-women-s-crepe-black-color-bandhani-printed-straight-kurti-swatch-rv04ejjsja--1-202206291716.jpg&quot;&gt; could not be scrolled into view
+<td title='test.Test_item_details.offers()'><b>offers</b><br>Test class: test.Test_item_details</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #cms_offers
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;PSL-8WH4XM3&apos;, ip: &apos;10.44.27.187&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;PSL-8WH4XM3&apos;, ip: &apos;10.44.29.123&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1, clickElement {id=187b7b50-4044-4e80-b9cf-8e9ee8450b60}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:debuggerAddress: localhost:57745, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14836, moz:profile: C:\Users\SHIVAN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57745/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1)] -&gt; xpath: //*[@id=&quot;variant_colour&quot;]/div/ul/li[1]/a/div/img]
-Session ID: c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1
+Command: [1d9f3a4e-5115-4fee-8c06-f7ff7be4eab9, findElement {using=id, value=cms_offers}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:debuggerAddress: localhost:60153, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19560, moz:profile: C:\Users\SHIVAN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60153/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1d9f3a4e-5115-4fee-8c06-f7ff7be4eab9
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -92,19 +92,22 @@ Session ID: c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at test.Test_itemDetails.dress(Test_itemDetails.java:301)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at pages.item_details.offers(item_details.java:218)
+	at test.Test_item_details.offers(Test_item_details.java:117)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1642154835", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1642154835'><pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;img src=&quot;https://www.jiomart.com/images/product/original/rv04ejjsja/ethnic-basket-women-s-crepe-black-color-bandhani-printed-straight-kurti-swatch-rv04ejjsja--1-202206291716.jpg&quot;&gt; could not be scrolled into view
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace733213598", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace733213598'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: #cms_offers
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;
-System info: host: &apos;PSL-8WH4XM3&apos;, ip: &apos;10.44.27.187&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+System info: host: &apos;PSL-8WH4XM3&apos;, ip: &apos;10.44.29.123&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1, clickElement {id=187b7b50-4044-4e80-b9cf-8e9ee8450b60}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:debuggerAddress: localhost:57745, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14836, moz:profile: C:\Users\SHIVAN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57745/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1)] -&gt; xpath: //*[@id=&quot;variant_colour&quot;]/div/ul/li[1]/a/div/img]
-Session ID: c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1
+Command: [1d9f3a4e-5115-4fee-8c06-f7ff7be4eab9, findElement {using=id, value=cms_offers}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 104.0.2, moz:accessibilityChecks: false, moz:buildID: 20220902153754, moz:debuggerAddress: localhost:60153, moz:geckodriverVersion: 0.31.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 19560, moz:profile: C:\Users\SHIVAN~1\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60153/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 1d9f3a4e-5115-4fee-8c06-f7ff7be4eab9
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -117,9 +120,12 @@ Session ID: c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:569)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at test.Test_itemDetails.dress(Test_itemDetails.java:301)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:387)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:379)
+	at pages.item_details.offers(item_details.java:218)
+	at test.Test_item_details.offers(Test_item_details.java:117)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,8 +155,8 @@ Session ID: c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>35</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
+<td>7</td>
+<td>test.Test_item_details@72035809</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,65 +167,55 @@ Session ID: c98b4f99-5e4c-4108-a3b5-cb41e1d4f4f1
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='test.Test_itemDetails.zoomImage()'><b>zoomImage</b><br>Test class: test.Test_itemDetails</td>
-<td></td>
-<td>27</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
-<tr>
-<td title='test.Test_itemDetails.offers()'><b>offers</b><br>Test class: test.Test_itemDetails</td>
-<td></td>
-<td>13</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
-<tr>
-<td title='test.Test_itemDetails.discount()'><b>discount</b><br>Test class: test.Test_itemDetails</td>
-<td></td>
-<td>0</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
-<tr>
-<td title='test.Test_itemDetails.getURL()'><b>getURL</b><br>Test class: test.Test_itemDetails</td>
+<td title='test.Test_item_details.search()'><b>search</b><br>Test class: test.Test_item_details</td>
 <td></td>
 <td>10</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
+<td>test.Test_item_details@72035809</td></tr>
 <tr>
-<td title='test.Test_itemDetails.compare()'><b>compare</b><br>Test class: test.Test_itemDetails</td>
-<td></td>
-<td>50</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
-<tr>
-<td title='test.Test_itemDetails.pincode()'><b>pincode</b><br>Test class: test.Test_itemDetails</td>
-<td></td>
-<td>18</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
-<tr>
-<td title='test.Test_itemDetails.getTitle()'><b>getTitle</b><br>Test class: test.Test_itemDetails</td>
+<td title='test.Test_item_details.discount()'><b>discount</b><br>Test class: test.Test_item_details</td>
 <td></td>
 <td>0</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
+<td>test.Test_item_details@72035809</td></tr>
 <tr>
-<td title='test.Test_itemDetails.slideShow()'><b>slideShow</b><br>Test class: test.Test_itemDetails</td>
+<td title='test.Test_item_details.dress()'><b>dress</b><br>Test class: test.Test_item_details</td>
+<td></td>
+<td>76</td>
+<td>test.Test_item_details@72035809</td></tr>
+<tr>
+<td title='test.Test_item_details.compare()'><b>compare</b><br>Test class: test.Test_item_details</td>
+<td></td>
+<td>46</td>
+<td>test.Test_item_details@72035809</td></tr>
+<tr>
+<td title='test.Test_item_details.getTitle()'><b>getTitle</b><br>Test class: test.Test_item_details</td>
+<td></td>
+<td>0</td>
+<td>test.Test_item_details@72035809</td></tr>
+<tr>
+<td title='test.Test_item_details.slideShow()'><b>slideShow</b><br>Test class: test.Test_item_details</td>
 <td></td>
 <td>4</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
+<td>test.Test_item_details@72035809</td></tr>
 <tr>
-<td title='test.Test_itemDetails.getItem()'><b>getItem</b><br>Test class: test.Test_itemDetails</td>
+<td title='test.Test_item_details.zoomImage()'><b>zoomImage</b><br>Test class: test.Test_item_details</td>
 <td></td>
-<td>6</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
+<td>27</td>
+<td>test.Test_item_details@72035809</td></tr>
 <tr>
-<td title='test.Test_itemDetails.addToCart()'><b>addToCart</b><br>Test class: test.Test_itemDetails</td>
+<td title='test.Test_item_details.getItem()'><b>getItem</b><br>Test class: test.Test_item_details</td>
+<td></td>
+<td>4</td>
+<td>test.Test_item_details@72035809</td></tr>
+<tr>
+<td title='test.Test_item_details.pincode()'><b>pincode</b><br>Test class: test.Test_item_details</td>
+<td></td>
+<td>17</td>
+<td>test.Test_item_details@72035809</td></tr>
+<tr>
+<td title='test.Test_item_details.addToCart()'><b>addToCart</b><br>Test class: test.Test_item_details</td>
 <td></td>
 <td>5</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
-<tr>
-<td title='test.Test_itemDetails.search()'><b>search</b><br>Test class: test.Test_itemDetails</td>
-<td></td>
-<td>10</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
-<tr>
-<td title='test.Test_itemDetails.addToCartMultiple()'><b>addToCartMultiple</b><br>Test class: test.Test_itemDetails</td>
-<td></td>
-<td>0</td>
-<td>test.Test_itemDetails@606e4010</td></tr>
+<td>test.Test_item_details@72035809</td></tr>
 </table><p>
 </body>
 </html>
