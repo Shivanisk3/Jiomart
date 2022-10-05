@@ -1,4 +1,4 @@
-package Sample.Sample_Practice;
+package practice.jiomart;
 
 import java.io.File;
 import java.util.concurrent.TimeUnit;
@@ -23,7 +23,7 @@ import org.openqa.selenium.JavascriptExecutor;
 
 
 
-public class Wishlist1 {
+public class Wishlist {
 	//private static final String FileUtils = null;
 	public String baseUrl = "https://www.jiomart.com/customer/account/login";
     String driverPath="D:\\geckodriver-v0.31.0-win64\\geckodriver.exe";

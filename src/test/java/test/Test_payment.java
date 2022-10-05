@@ -17,7 +17,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class Payment2 {
+public class Test_payment {
 public String baseUrl = "https://www.jiomart.com/";
     String driverPath = "D:\\D downloads\\chromedriver_win321\\chromedriver.exe";
     public WebDriver driver;

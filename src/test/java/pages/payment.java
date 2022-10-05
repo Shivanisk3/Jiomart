@@ -1,5 +1,7 @@
 package pages;
 
+import java.io.File;
+import java.io.IOException;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -108,7 +110,7 @@ public class payment {
 	  }
 	  
 	  
-	  public void paymentMode() {
+	  public void paymentMode() throws IOException {
 	 driver.findElement(pay_css).click();
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	 JavascriptExecutor s1=(JavascriptExecutor)driver;//casting
@@ -124,8 +126,8 @@ FileUtils.copyFile(SrcFile,new File("C:/Users/divya_shinde/eclipse-workspace/Sel
 driver.findElement(By.xpath("//*[@id='app']/main/div/app-order-detail/div[1]/div[2]/div[1]/div[1]/div[2]/div/div[1]/button")).click();
 	 driver.findElement(pay_css3).click();
 	 driver.findElement(pay_xpath).click();
-        driver.findElement(pay_name1).click();		
-        driver.findElement(pay_class3).click();
+        //driver.findElement(pay_name1).click();		
+        //driver.findElement(pay_class3).click();
 	 
 	  }
 }
