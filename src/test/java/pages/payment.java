@@ -7,6 +7,9 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 
 
 public class payment {
@@ -109,14 +112,20 @@ public class payment {
 	 driver.findElement(pay_css).click();
 	 driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	 JavascriptExecutor s1=(JavascriptExecutor)driver;//casting
-	 s1.executeScript("window.scrollBy(0,700)");
+	 s1.executeScript("window.scrollBy(0,400)");
 	 driver.findElement(payment_id).click();
 	 driver.findElement(pay_class1).click();
 	 driver.findElement(pay_class2).click();
 	 driver.findElement(pay_css1).click();
 	 driver.findElement(pay_css2).click();
+         TakesScreenshot scrShot=((TakesScreenshot)driver);
+File SrcFile=scrShot.getScreenshotAs(OutputType.FILE);
+FileUtils.copyFile(SrcFile,new File("C:/Users/divya_shinde/eclipse-workspace/Selenium/Screenshots/Screenshot2.png"));
+driver.findElement(By.xpath("//*[@id='app']/main/div/app-order-detail/div[1]/div[2]/div[1]/div[1]/div[2]/div/div[1]/button")).click();
 	 driver.findElement(pay_css3).click();
 	 driver.findElement(pay_xpath).click();
+        driver.findElement(pay_name1).click();		
+        driver.findElement(pay_class3).click();
 	 
 	  }
 }
