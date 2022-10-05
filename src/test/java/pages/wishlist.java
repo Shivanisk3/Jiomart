@@ -48,6 +48,7 @@ public class wishlist {
 		  Thread.sleep(10000);
 		  driver.findElement(addid).click();
 		  driver.findElement(addxpath5).click();
+		  Thread.sleep(1000);
 		  String s1= driver.findElement(addxpath6).getText();
 		  System.out.println("Wishlist item count after adding : "+s1.charAt(10));
 		  Thread.sleep(2000);
