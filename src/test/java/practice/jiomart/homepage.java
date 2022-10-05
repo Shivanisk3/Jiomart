@@ -47,6 +47,7 @@ public class homepage {
 	@Test(priority=4)
 	public void working() throws InterruptedException
 	{
+		//moving nav items
 		Actions actions =new Actions(driver);
 
 		List<WebElement> cursor;
