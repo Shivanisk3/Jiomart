@@ -56,8 +56,7 @@ public class register {
 		String name,name2,email,pass1,pass2,otp;
 		while(user1.next())
 		{
-			//System.out.println(user1.getString("firstname"));
-			//System.out.println(user1.getString("lastname"));
+			//getting credentials of users
 			name= user1.getString("firstname");
 			name2= user1.getString("lastname");
 			email= user1.getString("email");
