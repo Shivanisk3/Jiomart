@@ -104,8 +104,8 @@ public class userprofile {
 	driver.findElement(pro2_last).sendKeys("Johnson");
 	Thread.sleep(3000);
 
-	//driver.findElement(pro2_dob).sendKeys("18/05/2000");
-	//Thread.sleep(3000);
+	driver.findElement(pro2_dob).sendKeys("18/05/2000");
+	Thread.sleep(3000);
 
 	driver.findElement(pro2_email).clear();
 	driver.findElement(pro2_email).sendKeys("jiomart@gmail.com");
